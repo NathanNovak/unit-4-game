@@ -1,5 +1,6 @@
 .body{
-    background-image: url(../Images/star\ background.jpeg);
+    background: url(../Images/star\ background.jpeg) no-repeat center center fixed;
+       
 }
 .header{
     background-color: rgb(199,154,110);
@@ -31,4 +32,15 @@
     margin-left: 10px; 
     float: left;
    
+}
+.bottom{
+    background-color: rgb(106,119,126);
+    margin: 15px 0px 15px 15px;
+}
+#number-box3{
+    font-size: 22px;
+    background-color: rgb(2,254,255);
+    height: 150px;
+    margin: 10px 0px 10px 15px;
+    padding-top: 25px;
 }
