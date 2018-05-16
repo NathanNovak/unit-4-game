@@ -44,7 +44,12 @@ $(document).ready(function () {
         //if player's total matches the generated one then they win
 
         //if players total goes over then they lose
-
+        if (playerNum > randomNumber) {
+            alert("You Lose!");
+        }
+        if (playerNum === randomNumber) {
+            alert("You Win!");
+        }
     });
 
 });
