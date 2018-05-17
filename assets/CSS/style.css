@@ -29,9 +29,12 @@
     padding-top: 25px;
 }
 .crystals{
-    margin-left: 10px; 
-    float: left;
-   
+    height: 150px;
+    width: 150px; 
+}
+crystalhover:hover{
+    height: 175px;
+    width: 175px;
 }
 .bottom{
     background-color: rgb(106,119,126);
@@ -44,3 +47,12 @@
     margin: 10px 0px 10px 15px;
     padding-top: 25px;
 }
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+  
+      border: 1px solid #ccc;
+  }

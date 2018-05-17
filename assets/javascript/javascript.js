@@ -16,6 +16,8 @@ $(document).ready(function () {
     function start() {
         crystalNumbers();
         generateNumber();
+        playerNum = 0;
+        $("#number-box3").html(playerNum);
     }
 
     //a random number is generated and displayed in the lower box by the score
@@ -45,11 +47,18 @@ $(document).ready(function () {
 
         //if players total goes over then they lose
         if (playerNum > randomNumber) {
-            alert("You Lose!");
+            losses++
+            console.log("You Lose!");
+            $("#losses").html(losses);
+            start();
         }
         if (playerNum === randomNumber) {
-            alert("You Win!");
+            wins++
+            console.log("You Win!");
+            $("#wins").html(wins);
+            start();
         }
+        
     });
 
 });
