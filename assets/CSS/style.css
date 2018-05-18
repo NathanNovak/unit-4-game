@@ -1,6 +1,7 @@
 .body{
     background: url(../Images/star\ background.jpeg) no-repeat center center fixed;
-       
+    font-family: 'Lobster', cursive;
+
 }
 .header{
     background-color: rgb(199,154,110);
@@ -9,19 +10,23 @@
     padding: 25px;
     margin: 10px 15px 15px 15px;
     float: left;
-    font-size: 32px;
+    font-size: 50px;
 }
 .main-body{
     background-color: rgb(255,227,198);
     margin: 10px 10px 10px 15px;
 }
 #number-box1{
-    font-size: 32px;
+    font-family: 'Permanent Marker', cursive;
+    position: relative;
+    font-size: 100px;
+    text-align: center;
     background-color: rgb(93,198,231);
     height: 150px;
     margin: 10px 10px 10px 15px;
 }
 #number-box2{
+    font-family: 'Permanent Marker', cursive;
     font-size: 22px;
     background-color: rgb(2,254,255);
     height: 150px;
@@ -41,11 +46,13 @@ crystalhover:hover{
     margin: 15px 0px 15px 15px;
 }
 #number-box3{
-    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(241, 19, 30);
     background-color: rgb(2,254,255);
     height: 150px;
     margin: 10px 0px 10px 15px;
-    padding-top: 25px;
 }
 
 .flip-container {

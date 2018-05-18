@@ -9,6 +9,9 @@ $(document).ready(function () {
     var losses = 0;
     var playerNum = 0;
     var randomNumber = 0;
+    var audio = new Audio("assets/images/Ahhh.wav");
+    var audioLose = new Audio("assets/images/fail-trombone-03.wav");
+    var audioWin = new Audio("assets/images/Ta Da.wav");
 
     start();
 
@@ -41,6 +44,7 @@ $(document).ready(function () {
     //player clicks on each crystal to and the value is added to the bottom number
     $(".crystal").on("click", function () {
         var crystalValue = $(this).val();
+        // audio.play();
         playerNum = playerNum + parseInt(crystalValue);
         $("#number-box3").html(playerNum);
         //if player's total matches the generated one then they win
@@ -48,13 +52,13 @@ $(document).ready(function () {
         //if players total goes over then they lose
         if (playerNum > randomNumber) {
             losses++
-            console.log("You Lose!");
+            audioLose.play();
             $("#losses").html(losses);
             start();
         }
         if (playerNum === randomNumber) {
             wins++
-            console.log("You Win!");
+            audioWin.play();
             $("#wins").html(wins);
             start();
         }
