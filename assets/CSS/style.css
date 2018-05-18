@@ -1,7 +1,14 @@
-.body{
-    background: url(../Images/star\ background.jpeg) no-repeat center center fixed;
+.body, html{
     font-family: 'Lobster', cursive;
-
+    height: 100%;
+}
+.bg{
+    background: url(../Images/star\ background.jpeg) center center fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .header{
     background-color: rgb(199,154,110);
@@ -63,3 +70,4 @@ crystalhover:hover{
   
       border: 1px solid #ccc;
   }
+    
