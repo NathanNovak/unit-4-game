@@ -9,9 +9,9 @@ $(document).ready(function () {
     var losses = 0;
     var playerNum = 0;
     var randomNumber = 0;
-    var audio = new Audio("assets/images/Ahhh.wav");
-    var audioLose = new Audio("assets/images/fail-trombone-03.wav");
-    var audioWin = new Audio("assets/images/Ta Da.wav");
+    var audio = new Audio("https://raw.githubusercontent.com/NathanNovak/unit-4-game/master/assets/Images/Ahh%20lower.wav");
+    var audioLose = new Audio("https://raw.githubusercontent.com/NathanNovak/unit-4-game/master/assets/Images/fail-trombone-03.wav");
+    var audioWin = new Audio("https://raw.githubusercontent.com/NathanNovak/unit-4-game/master/assets/Images/Ta%20Da.wav");
 
     start();
 
@@ -52,13 +52,13 @@ $(document).ready(function () {
         //if players total goes over then they lose
         if (playerNum > randomNumber) {
             losses++
-            audioLose.play();
+            var test = audioLose.play();
             $("#losses").html(losses);
             start();
         }
         if (playerNum === randomNumber) {
             wins++
-            audioWin.play();
+            var test = audioWin.play();
             $("#wins").html(wins);
             start();
         }
